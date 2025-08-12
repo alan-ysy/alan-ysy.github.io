@@ -1,10 +1,22 @@
 :root {
     /* Colors */
-    --color-primary: #F9B4ED;
+    /* --color-primary: #F9B4ED;
     --color-secondary: #B1A8F0;
     --color-background: #070E36;
     --color-background-secondary: #0F1C4D;
-    --color-text: #F9F1F7;
+    --color-text: #F9F1F7; */
+
+    /* New color scheme - Taken from the moonfly terminal color scheme: https://github.com/bluz71/vim-moonfly-colors */
+    --color-background: #080808;
+    --color-foreground: #bdbdbd;
+    --color-black: #323437;
+    --color-red: #ff5d5d;
+    --color-green: #8cc85f;
+    --color-yellow: #e3c78a;
+    --color-blue: #80a0ff;
+    --color-purple: #cf87e8;
+    --color-cyan: #79dac8;
+    --color-white: #c6c6c6;
 
     /* Fonts */
     --font-family: Helvetica, sans-serif;
@@ -25,7 +37,7 @@ html {
 
 body {
     background: var(--color-background);
-    color: var(--color-text);
+    color: var(--color-foreground);
     font-family: var(--font-family);
 }
 
@@ -34,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-top: 1rem;
-    color: var(--color-secondary);
+    color: var(--color-blue);
 }
 
 /* Use a modular scale of about 1.25 */
@@ -68,30 +80,35 @@ main {
 }
 
 a {
-    color: var(--color-secondary);
+    color: var(--color-blue);
     text-decoration: underline;
     text-decoration-style: dashed;
 }
 
 a:visited {
-    color: var(--color-primary);
+    color: var(--color-purple);
     text-decoration: underline;
     text-decoration-style: dashed;
 }
 
 a:hover {
     color: var(--color-background);
-    background-color: var(--color-secondary);
+    background-color: var(--color-blue);
 }
 
 /* Set it so visited links on the navigation bar don't change color */
 .nav-item:visited {
-    color: var(--color-secondary);
+    color: var(--color-blue);
     text-decoration: underline;
     text-decoration-style: dashed;
 }
 
 .site-name {
     line-height: 1.2;
-    color: var(--color-text);
+    color: var(--color-foreground);
+}
+
+.site-name a {
+    color: var(--color-foreground);
+    text-decoration-style: solid;
 }
