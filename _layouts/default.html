@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+        <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
+        <!-- First adds the page title if specified, then adds the site title -->
+        <title>{% if page.title %}{{ page.title }} - {% endif %}Alan's Web Journal</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <h4 class="site-name">Alan's Web Journal</h4>
+                <ul>
+                    <li><h5><a class="nav-item" href="{{ '/about' | relative_url }}">About</a></h5></li>
+                    <li><h5><a class="nav-item" href="{{ '/projects' | relative_url }}">Projects</a></h5></li>
+                </ul>
+            </nav>
+            <main>
+                {{ content }}
+            </main>
+        </div>
+    </body>
+</html>
