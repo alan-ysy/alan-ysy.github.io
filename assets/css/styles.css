@@ -1,0 +1,97 @@
+:root {
+    /* Colors */
+    --color-primary: #F9B4ED;
+    --color-secondary: #B1A8F0;
+    --color-background: #070E36;
+    --color-background-secondary: #0F1C4D;
+    --color-text: #F9F1F7;
+
+    /* Fonts */
+    --font-family: Helvetica, sans-serif;
+}
+
+/* CSS reset to remove browser defaults for consistent styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-family);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 1rem;
+    color: var(--color-secondary);
+}
+
+/* Use a modular scale of about 1.25 */
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; }
+
+p { 
+    font-size: 1.125em;
+    margin-top: 0.5em;
+}
+
+.container {
+    display: flex;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 1em;
+    gap: 3em;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+main {
+    flex: 4;
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+a:visited {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+a:hover {
+    color: var(--color-background);
+    background-color: var(--color-secondary);
+}
+
+/* Set it so visited links on the navigation bar don't change color */
+.nav-item:visited {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.site-name {
+    line-height: 1.2;
+    color: var(--color-text);
+}
