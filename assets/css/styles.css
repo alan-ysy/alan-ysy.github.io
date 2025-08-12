@@ -6,7 +6,7 @@
     --color-background-secondary: #0F1C4D;
     --color-text: #F9F1F7; */
 
-    /* New color scheme - Taken from the moonfly terminal color scheme: https://github.com/bluz71/vim-moonfly-colors */
+    /* Moonfly terminal color scheme: https://github.com/bluz71/vim-moonfly-colors */
     --color-background: #080808;
     --color-foreground: #bdbdbd;
     --color-black: #323437;
@@ -91,16 +91,23 @@ a:visited {
     text-decoration-style: dashed;
 }
 
-a:hover {
-    color: var(--color-background);
-    background-color: var(--color-blue);
-}
-
 /* Set it so visited links on the navigation bar don't change color */
 .nav-item:visited {
     color: var(--color-blue);
     text-decoration: underline;
     text-decoration-style: dashed;
+}
+
+/* Hover styles for links and nav items */
+a:hover, .nav-item:hover {
+    color: var(--color-background);
+    background-color: var(--color-blue);
+}
+
+/* Ensure nav item hover overrides visited state */
+.nav-item:visited:hover {
+    color: var(--color-background);
+    background-color: var(--color-blue);
 }
 
 .site-name {
@@ -110,5 +117,11 @@ a:hover {
 
 .site-name a {
     color: var(--color-foreground);
+    text-decoration-style: solid;
+}
+
+.site-name a:hover {
+    color: var(--color-background);
+    background-color: var(--color-foreground);
     text-decoration-style: solid;
 }
