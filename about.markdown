@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello! My name is Alan. I'm a second-year computer science major at Case Western Reserve University.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm still exploring various CS topics, but I have a growing interest in areas such as low-level programming, systems programming, and graphics programming.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Additionally, I plan on pursuing mathematics as either a minor or secondary major.
 
+## This Site
 
-[jekyll-organization]: https://github.com/jekyll
+I created this site using [Jekyll](https://jekyllrb.com/), a static site generator.
