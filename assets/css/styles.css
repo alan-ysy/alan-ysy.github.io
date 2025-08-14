@@ -27,7 +27,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 html {
@@ -75,8 +74,21 @@ nav {
     text-align: right;
 }
 
+/* Remove list styling from nav bar for cleaner look */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+nav li {
+    list-style: none;
+}
+
 main {
     flex: 4;
+}
+
+ul, ol {
+    list-style-position: inside;
 }
 
 a {
