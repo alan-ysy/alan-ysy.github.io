@@ -74,12 +74,12 @@ nav {
     text-align: right;
 }
 
-/* Remove list styling from nav bar for cleaner look */
+/* Remove list styling from certain elements for cleaner look */
 nav ul {
     list-style: none;
     padding-left: 0;
 }
-nav li {
+nav li, .post-list {
     list-style: none;
 }
 
