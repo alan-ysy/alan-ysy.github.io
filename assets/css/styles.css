@@ -29,27 +29,24 @@
     padding: 0;
 }
 
-html {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 body {
+    font-size: 16px;
     background: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-family);
+    line-height: 1.5;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.2;
-    margin-top: 1rem;
+    padding-top: 0.8em;                     /* Adjust this padding-top for space above headings */
     color: var(--color-blue);
 }
 
 /* Use a modular scale of about 1.25 */
-h1 { font-size: 3em; }
+h1 { font-size: 3em; padding-top: 0.3em; }  /* Overwrite h1 padding-top to make it line up with top of nav bar */
 h2 { font-size: 2.5em; }
 h3 { font-size: 2em; }
 h4 { font-size: 1.5em; }
@@ -58,14 +55,13 @@ h6 { font-size: 1em; }
 
 p { 
     font-size: 1.125em;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 
 .container {
     display: flex;
     max-width: 50rem;
-    margin: auto;
-    margin-top: 1em;
+    margin: 1em auto 3em;
     gap: 3em;
 }
 
